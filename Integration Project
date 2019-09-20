@@ -1,16 +1,16 @@
 print("Welcome to the basic math quiz game. ")
-n = input("Please enter a random value: ")
-print("What is n plus 5")
+n = input("Please enter a random number: ")
+print"What is", n, "plus 5?"
 x = n + 5
-answerQuiz = input()
-if x == answerQuiz:
+addQuestion = input()
+if x == addQuestion:
     print("Correct!")
 else:
     print("Incorrect.")
-print("What is n times 5")
-x = n * 5
-answerMQuiz = input()
-if x == answerMQuiz:
+print"What is", x, "times 5?"
+x = x * 5
+productQuestion = input()
+if x == productQuestion:
     print("Correct!")
 else:
     print("Incorrect.")
