@@ -1,16 +1,32 @@
 print("Welcome to the basic math quiz game. ")
-n = input("Please enter a random number: ")
-print"What is", n, "plus 5?"
-x = n + 5
-addQuestion = input()
-if x == addQuestion:
+#n = input("Please enter a random number: ")
+#print"What is", n, "plus 5?"
+#x = n + 5
+#addQuestion = input()
+#if x == addQuestion:
+#    print("Correct!")
+#else:
+#   print("Incorrect.")
+#print"What is", x, "times 5?"
+#x = x * 5
+#productQuestion = input()
+#if x == productQuestion:
+#    print("Correct!")
+#else:
+#    print("Incorrect.")
+# For generating random numbers.
+#print("Here's your random number")
+import random
+#print(random.randint(1, 12))
+score = 0
+z = (random.randint(1, 12))
+c = (random.randint(1, 12))
+q = z + c
+print"what is", z, "+", c, "?"
+testRand = input()
+if q == testRand:
     print("Correct!")
+    score = score +1
 else:
     print("Incorrect.")
-print"What is", x, "times 5?"
-x = x * 5
-productQuestion = input()
-if x == productQuestion:
-    print("Correct!")
-else:
-    print("Incorrect.")
+print"Your score is", score
