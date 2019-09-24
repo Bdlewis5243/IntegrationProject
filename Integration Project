@@ -1,22 +1,28 @@
-print("Welcome to the basic math quiz game. ")
+print("Welcome to the basic math quiz game.")
+print("Would you like to practice addition, subtraction, multiplication, or division?")
+#selectionAns = input()
+
 import random
 score = 0
+question = 0
 intOne = (random.randint(1, 12))
 intTwo = (random.randint(1, 12))
 sumOne = intOne + intTwo
 sumTwo = sumOne + 5
 print"what is", intOne, "+", intTwo, "?"
 testSumone = input()
+question = question + 1
 if sumOne == testSumone:
     print("Correct!")
-    score = score +1
+    score = score + 1
 else:
-    print("Incorrect.")
+    print"Incorrect. The answer is actually", sumOne
 print "Now what is", sumOne, "+ 5"
 testSumtwo = input()
+question = question + 1
 if sumTwo == testSumtwo:
     print("Correct!")
-    score = score +1
+    score = score + 1
 else:
-    print("Incorrect.")
-print"Your score is", score, "out of 2"
+    print"Incorrect. The answer is actually", sumTwo
+print"Your score is", score, "out of", question
