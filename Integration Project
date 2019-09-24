@@ -19,4 +19,4 @@ if sumTwo == testSumtwo:
     score = score +1
 else:
     print("Incorrect.")
-print"Your score is", score
+print"Your score is", score, "out of 2"
