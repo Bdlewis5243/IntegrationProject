@@ -1,10 +1,14 @@
 print("Welcome to the basic math quiz game.")
-print("Would you like to practice addition, subtraction, multiplication, or division?")
-selectionAns = input()
-a = "addition" or "Addition"
-if additionSection == a:
-    then: additionSection = additionSection + 1
-if additionSection == 1:
+addStart = 0
+beginning = (input("Would you like to practice addition, subtraction, multiplication, or division?: "))
+selectionUpper = ["Addition", "Subtraction", "Multiplication", "Division"]
+selectionLower = ["addition", "subtraction", "multiplication ", "division"]
+addition = selectionUpper[0] or selectionLower[0]
+if beginning == addition:
+    addStart = addStart + 1
+else:
+    print("test")
+if addStart == 1:
     import random
     score = 0
     question = 0
@@ -29,5 +33,4 @@ if additionSection == 1:
     else:
         print"Incorrect. The answer is actually", sumTwo
     print"Your score is", score, "out of", question
-else:
-    exit()
+
