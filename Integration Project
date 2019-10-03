@@ -1,10 +1,18 @@
 print("Welcome to the basic math quiz game.")
 addStart = 0
+subStart = 0
+mulStart = 0
 beginning = input("Would you like to practice addition, subtraction, multiplication, or division?: ")
 selectionUpper = ["Addition", "Subtraction", "Multiplication", "Division"]
 addition = selectionUpper[0]
-if beginning == addition or beginning == addition.lower():
+subtraction = selectionUpper[1]
+multiplication = selectionUpper[2]
+if beginning == addition or beginning.lower() == addition.lower():
     addStart = addStart + 1
+elif beginning == subtraction or beginning.lower() == subtraction.lower():
+    subStart = subStart + 1
+elif beginning == multiplication or beginning.lower() == multiplication.lower():
+    mulStart = mulStart + 1
 else:
     print("test")
 if addStart == 1:
@@ -15,21 +23,70 @@ if addStart == 1:
     intTwo = (random.randint(1, 12))
     sumOne = intOne + intTwo
     sumTwo = sumOne + 5
-    print"what is", intOne, "+", intTwo, "?"
-    testSumone = input()
+    print("what is", intOne, "+", intTwo, "?")
+    testSumone = int(input())
     question = question + 1
     if sumOne == testSumone:
         print("Correct!")
         score = score + 1
     else:
-        print"Incorrect. The answer is actually", sumOne
-    print "Now what is", sumOne, "+ 5"
-    testSumtwo = input()
+        print("Incorrect. The answer is actually", sumOne)
+    print("Now what is", sumOne, "+ 5")
+    testSumtwo = int(input())
     question = question + 1
     if sumTwo == testSumtwo:
         print("Correct!")
         score = score + 1
     else:
-        print"Incorrect. The answer is actually", sumTwo
-    print"Your score is", score, "out of", question
-
+        print("Incorrect. The answer is actually", sumTwo)
+    print("Your score is", score, "out of", question)
+if subStart == 1:
+    import random
+    score = 0
+    question = 0
+    intOne = (random.randint(1, 12))
+    intTwo = (random.randint(1, 12))
+    sumOne = intOne - intTwo
+    sumTwo = sumOne - 5
+    print("what is", intOne, "-", intTwo, "?")
+    testSumone = int(input())
+    question = question + 1
+    if sumOne == testSumone:
+        print("Correct!")
+        score = score + 1
+    else:
+        print("Incorrect. The answer is actually", sumOne)
+    print("Now what is", sumOne, "- 5")
+    testSumtwo = int(input())
+    question = question + 1
+    if sumTwo == testSumtwo:
+        print("Correct!")
+        score = score + 1
+    else:
+        print("Incorrect. The answer is actually", sumTwo)
+    print("Your score is", score, "out of", question)
+if mulStart == 1:
+    import random
+    score = 0
+    question = 0
+    intOne = (random.randint(1, 12))
+    intTwo = (random.randint(1, 12))
+    sumOne = intOne * intTwo
+    sumTwo = sumOne * 5
+    print("what is", intOne, "*", intTwo, "?")
+    testSumone = int(input())
+    question = question + 1
+    if sumOne == testSumone:
+        print("Correct!")
+        score = score + 1
+    else:
+        print("Incorrect. The answer is actually", sumOne)
+    print("Now what is", sumOne, "* 5")
+    testSumtwo = int(input())
+    question = question + 1
+    if sumTwo == testSumtwo:
+        print("Correct!")
+        score = score + 1
+    else:
+        print("Incorrect. The answer is actually", sumTwo)
+    print("Your score is", score, "out of", question)
