@@ -1,10 +1,9 @@
 print("Welcome to the basic math quiz game.")
 addStart = 0
-beginning = (input("Would you like to practice addition, subtraction, multiplication, or division?: "))
+beginning = input("Would you like to practice addition, subtraction, multiplication, or division?: ")
 selectionUpper = ["Addition", "Subtraction", "Multiplication", "Division"]
-selectionLower = ["addition", "subtraction", "multiplication ", "division"]
-addition = selectionUpper[0] or selectionLower[0]
-if beginning == addition:
+addition = selectionUpper[0]
+if beginning == addition or beginning == addition.lower():
     addStart = addStart + 1
 else:
     print("test")
