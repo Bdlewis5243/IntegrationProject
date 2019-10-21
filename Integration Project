@@ -9,6 +9,12 @@ addition = selectionUpper[0]
 subtraction = selectionUpper[1]
 multiplication = selectionUpper[2]
 division = selectionUpper[3]
+while beginning == addition or subtraction or multiplication or division:
+    if beginning != addition or subtraction or multiplication or division:
+        beginning = input("Please enter Addition, Subtraction, Multiplication, or Division: ")
+    else:
+        beginning == addition or subtraction or multiplication or division
+
 if beginning == addition or beginning.lower() == addition.lower():
     addStart = addStart + 1
 elif beginning == subtraction or beginning.lower() == subtraction.lower():
@@ -17,8 +23,6 @@ elif beginning == multiplication or beginning.lower() == multiplication.lower():
     mulStart = mulStart + 1
 elif beginning == division or beginning.lower() == division.lower():
     divStart = divStart + 1
-else:
-    print("test")
 if addStart == 1:
     import random
     score = 0
@@ -98,8 +102,8 @@ if divStart == 1:
     import random
     score = 0
     question = 0
-    intOne = (random.randint(1, 12))
-    intTwo = (random.randint(1, 12))
+    intOne = (random.randint(1, 100))
+    intTwo = (random.randint(1, 10))
     sumOne = intOne / intTwo
     sumTwo = sumOne / 5
     print("what is", intOne, "/", intTwo, "?")
