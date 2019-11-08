@@ -9,28 +9,23 @@ addition = selectionUpper[0]
 subtraction = selectionUpper[1]
 multiplication = selectionUpper[2]
 division = selectionUpper[3]
-
-
 restart = True
 
 while restart:
-    while beginning != addition.lower() or subtraction.lower() or multiplication.lower() or division.lower():
-        if addition.lower() or subtraction.lower() or multiplication.lower() or division.lower() == beginning.lower():
-            reEntry = beginning
-            restart = False
-            print("Test")
-            break
-        else:
-            restart = True
-            reEntry = input("Please enter Addition, Subtraction, Multiplication, or Division: ")
+    if beginning.lower() == addition.lower() or beginning.lower() == subtraction.lower() or beginning.lower() == multiplication.lower() or beginning.lower() == division.lower():
+        restart = False
+        break
+    else:
+        beginning = input("Please enter Addition, Subtraction, Multiplication, or Division: ")
+        restart = True
 
-if beginning == addition or beginning.lower() == addition.lower():
+if beginning.lower() == addition.lower():
     addStart = addStart + 1
-elif beginning == subtraction or beginning.lower() == subtraction.lower():
+elif beginning.lower() == subtraction.lower():
     subStart = subStart + 1
-elif beginning == multiplication or beginning.lower() == multiplication.lower():
+elif beginning.lower() == multiplication.lower():
     mulStart = mulStart + 1
-elif beginning == division or beginning.lower() == division.lower():
+elif beginning.lower() == division.lower():
     divStart = divStart + 1
 
 if addStart == 1:
