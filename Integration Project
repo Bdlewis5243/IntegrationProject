@@ -34,95 +34,169 @@ if addStart == 1:
     question = 0
     intOne = (random.randint(1, 12))
     intTwo = (random.randint(1, 12))
+    intThree = (random.randint(1, 12))
     sumOne = intOne + intTwo
-    sumTwo = sumOne + 5
+    sumTwo = sumOne + intThree
+
     print("what is", intOne, "+", intTwo, "?")
-    testSumone = int(input())
+    invalidInput = True
+    while invalidInput:
+        try:
+            testSumone = int(input("Answer: "))
+            invalidInput = False
+        except ValueError:
+            print("Please enter a numeric value: ")
+
+
     question = question + 1
-    if sumOne == testSumone:
+    if int(sumOne) == testSumone:
         print("Correct!")
         score = score + 1
     else:
         print("Incorrect. The answer is actually", sumOne)
-    print("Now what is", sumOne, "+ 5")
-    testSumtwo = int(input())
+
+    print("Now what is", sumOne, "+", intThree)
+    invalidInput = True
+    while invalidInput:
+        try:
+            testSumtwo = int(input("Answer: "))
+            invalidInput = False
+        except ValueError:
+            print("Please enter a numeric value: ")
+
     question = question + 1
-    if sumTwo == testSumtwo:
+    if int(sumTwo) == testSumtwo:
         print("Correct!")
         score = score + 1
     else:
         print("Incorrect. The answer is actually", sumTwo)
     print("Your score is", score, "out of", question)
+
 if subStart == 1:
     import random
     score = 0
     question = 0
     intOne = (random.randint(1, 12))
     intTwo = (random.randint(1, 12))
+    intThree = (random.randint(1, 12))
     sumOne = intOne - intTwo
-    sumTwo = sumOne - 5
-    print("what is", intOne, "-", intTwo, "?")
-    testSumone = int(input())
+    sumTwo = sumOne - intThree
+    print("what is", intOne, "-", intTwo, "? ")
     question = question + 1
-    if sumOne == testSumone:
+
+    invalidInput = True
+    while invalidInput:
+        try:
+            testSumone = int(input("Answer: "))
+            invalidInput = False
+        except ValueError:
+            print("Please enter a numeric value: ")
+
+
+
+    if int(sumOne) == testSumone:
         print("Correct!")
         score = score + 1
     else:
         print("Incorrect. The answer is actually", sumOne)
-    print("Now what is", sumOne, "- 5")
-    testSumtwo = int(input())
+
+    print("Now what is", sumOne, "-", intThree)
     question = question + 1
-    if sumTwo == testSumtwo:
+
+    invalidInput = True
+    while invalidInput:
+        try:
+            testSumtwo = int(input("Answer: "))
+            invalidInput = False
+        except ValueError:
+            print("Please enter a numeric value: ")
+
+    if int(sumTwo) == int(testSumtwo):
         print("Correct!")
         score = score + 1
     else:
         print("Incorrect. The answer is actually", sumTwo)
     print("Your score is", score, "out of", question)
+
 if mulStart == 1:
     import random
     score = 0
     question = 0
     intOne = (random.randint(1, 12))
     intTwo = (random.randint(1, 12))
+    intThree = (random.randint(1, 5))
     sumOne = intOne * intTwo
-    sumTwo = sumOne * 5
+    sumTwo = sumOne * intThree
     print("what is", intOne, "*", intTwo, "?")
-    testSumone = int(input())
+    invalidInput = True
+    while invalidInput:
+        try:
+            testSumone = int(input("Answer: "))
+            invalidInput = False
+        except ValueError:
+            print("Please enter a numeric value: ")
+
     question = question + 1
-    if sumOne == testSumone:
+    if int(sumOne)== testSumone:
         print("Correct!")
         score = score + 1
     else:
         print("Incorrect. The answer is actually", sumOne)
-    print("Now what is", sumOne, "* 5")
-    testSumtwo = int(input())
+    print("Now what is", sumOne, "*", intThree)
+    invalidInput = True
+    while invalidInput:
+        try:
+            testSumtwo = int(input("Answer: "))
+            invalidInput = False
+        except ValueError:
+            print("Please enter a numeric value: ")
+
     question = question + 1
-    if sumTwo == testSumtwo:
+    if int(sumTwo) == testSumtwo:
         print("Correct!")
         score = score + 1
     else:
         print("Incorrect. The answer is actually", sumTwo)
     print("Your score is", score, "out of", question)
+
 if divStart == 1:
     import random
     score = 0
     question = 0
     intOne = (random.randint(1, 100))
     intTwo = (random.randint(1, 10))
+    intThree = (random.randint(1, 10))
     sumOne = intOne / intTwo
-    sumTwo = sumOne / 5
-    print("what is", intOne, "/", intTwo, "?")
-    testSumone = float(input())
+    sumTwo = sumOne / intThree
+    print("what is", intOne, "/", intTwo, "rounded to the nearest integer?")
     question = question + 1
-    if sumOne == testSumone:
+    invalidInput = True
+    while invalidInput:
+        try:
+            testSumone = float(input("Answer: "))
+            invalidInput = False
+        except ValueError:
+            print("Please enter a numeric value: ")
+
+
+    if round(float(sumOne)) == round(testSumone):
         print("Correct!")
         score = score + 1
     else:
         print("Incorrect. The answer is actually", sumOne)
-    print("Now what is", sumOne, "/ 5")
-    testSumtwo = float(input())
+    print("Now what is", round(sumOne), "/", intThree, "rounded to the nearest integer?")
+
+    invalidInput = True
+    while invalidInput:
+        try:
+            testSumtwo = float(input("Answer: "))
+            invalidInput = False
+        except ValueError:
+            print("Please enter a numeric value: ")
+
+
     question = question + 1
-    if sumTwo == testSumtwo:
+    if round(float(sumTwo)) == round(testSumtwo):
         print("Correct!")
         score = score + 1
     else:
