@@ -176,7 +176,7 @@ if divStart == 1:
             testSumone = float(input("Answer: "))
             invalidInput = False
         except ValueError:
-            print("Please enter a numeric value: ")
+            print("Please enter a numeric value rounded to the nearest integer: ")
 
 
     if round(float(sumOne)) == round(testSumone):
@@ -192,7 +192,7 @@ if divStart == 1:
             testSumtwo = float(input("Answer: "))
             invalidInput = False
         except ValueError:
-            print("Please enter a numeric value: ")
+            print("Please enter a numeric value rounded to the nearest integer: ")
 
 
     question = question + 1
