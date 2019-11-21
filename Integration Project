@@ -47,13 +47,13 @@ if add_start == 1:
     invalid_input = True
     while invalid_input:
         try:
-            test_sumone = int(input("Answer: "))
+            input_one = int(input("Answer: "))
             invalid_input = False
         except ValueError:
             print("Please enter a numeric value: ")
 
     question = question + 1
-    if int(sum_one) == test_sumone:
+    if int(sum_one) == input_one:
         print("Correct!")
         score = score + 1
     else:
@@ -63,13 +63,13 @@ if add_start == 1:
     invalid_input = True
     while invalid_input:
         try:
-            test_sumtwo = int(input("Answer: "))
+            input_two = int(input("Answer: "))
             invalid_input = False
         except ValueError:
             print("Please enter a numeric value: ")
 
     question = question + 1
-    if int(sum_two) == test_sumtwo:
+    if int(sum_two) == input_two:
         print("Correct!")
         score = score + 1
     else:
@@ -92,12 +92,12 @@ if sub_start == 1:
     invalid_input = True
     while invalid_input:
         try:
-            test_sumone = int(input("Answer: "))
+            input_one = int(input("Answer: "))
             invalid_input = False
         except ValueError:
             print("Please enter a numeric value: ")
 
-    if int(sum_one) == test_sumone:
+    if int(sum_one) == input_one:
         print("Correct!")
         score = score + 1
     else:
@@ -109,12 +109,12 @@ if sub_start == 1:
     invalid_input = True
     while invalid_input:
         try:
-            test_sumtwo = int(input("Answer: "))
+            input_two = int(input("Answer: "))
             invalid_input = False
         except ValueError:
             print("Please enter a numeric value: ")
 
-    if int(sum_two) == int(test_sumtwo):
+    if int(sum_two) == int(input_two):
         print("Correct!")
         score = score + 1
     else:
@@ -135,13 +135,13 @@ if mul_start == 1:
     invalid_input = True
     while invalid_input:
         try:
-            test_sumone = int(input("Answer: "))
+            input_one = int(input("Answer: "))
             invalid_input = False
         except ValueError:
             print("Please enter a numeric value: ")
 
     question = question + 1
-    if int(sum_one) == test_sumone:
+    if int(sum_one) == input_one:
         print("Correct!")
         score = score + 1
     else:
@@ -150,13 +150,13 @@ if mul_start == 1:
     invalid_input = True
     while invalid_input:
         try:
-            test_sumtwo = int(input("Answer: "))
+            input_two = int(input("Answer: "))
             invalid_input = False
         except ValueError:
             print("Please enter a numeric value: ")
 
     question = question + 1
-    if int(sum_two) == test_sumtwo:
+    if int(sum_two) == input_two:
         print("Correct!")
         score = score + 1
     else:
@@ -178,13 +178,13 @@ if div_start == 1:
     invalid_input = True
     while invalid_input:
         try:
-            test_sumone = float(input("Answer: "))
+            input_one = float(input("Answer: "))
             invalid_input = False
         except ValueError:
             print("Please enter a numeric value rounded to the nearest "
                   "integer: ")
 
-    if round(float(sum_one)) == round(test_sumone):
+    if round(float(sum_one)) == round(input_one):
         print("Correct!")
         score = score + 1
     else:
@@ -195,14 +195,14 @@ if div_start == 1:
     invalid_input = True
     while invalid_input:
         try:
-            test_sumtwo = float(input("Answer: "))
+            input_two = float(input("Answer: "))
             invalid_input = False
         except ValueError:
             print("Please enter a numeric value rounded to the nearest "
                   "integer: ")
 
     question = question + 1
-    if round(float(sum_two)) == round(test_sumtwo):
+    if round(float(sum_two)) == round(input_two):
         print("Correct!")
         score = score + 1
     else:
