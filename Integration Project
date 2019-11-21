@@ -14,8 +14,8 @@ restart = True
 
 while restart:
     if beginning.lower() == addition.lower() or beginning.lower() == \
-            subtraction.lower() or beginning.lower() == multiplication.lower()\
-            or beginning.lower() == division.lower():
+            subtraction.lower() or beginning.lower() == \
+            multiplication.lower() or beginning.lower() == division.lower():
         restart = False
         break
     else:
@@ -34,6 +34,7 @@ elif beginning.lower() == division.lower():
 
 if add_start == 1:
     import random
+
     score = 0
     question = 0
     int_one = (random.randint(1, 12))
@@ -50,7 +51,6 @@ if add_start == 1:
             invalid_input = False
         except ValueError:
             print("Please enter a numeric value: ")
-
 
     question = question + 1
     if int(sum_one) == test_sumone:
@@ -78,6 +78,7 @@ if add_start == 1:
 
 if sub_start == 1:
     import random
+
     score = 0
     question = 0
     int_one = (random.randint(1, 12))
@@ -95,8 +96,6 @@ if sub_start == 1:
             invalid_input = False
         except ValueError:
             print("Please enter a numeric value: ")
-
-
 
     if int(sum_one) == test_sumone:
         print("Correct!")
@@ -124,6 +123,7 @@ if sub_start == 1:
 
 if mul_start == 1:
     import random
+
     score = 0
     question = 0
     int_one = (random.randint(1, 12))
@@ -141,7 +141,7 @@ if mul_start == 1:
             print("Please enter a numeric value: ")
 
     question = question + 1
-    if int(sum_one)== test_sumone:
+    if int(sum_one) == test_sumone:
         print("Correct!")
         score = score + 1
     else:
@@ -165,6 +165,7 @@ if mul_start == 1:
 
 if div_start == 1:
     import random
+
     score = 0
     question = 0
     int_one = (random.randint(1, 100))
@@ -183,7 +184,6 @@ if div_start == 1:
             print("Please enter a numeric value rounded to the nearest "
                   "integer: ")
 
-
     if round(float(sum_one)) == round(test_sumone):
         print("Correct!")
         score = score + 1
@@ -200,7 +200,6 @@ if div_start == 1:
         except ValueError:
             print("Please enter a numeric value rounded to the nearest "
                   "integer: ")
-
 
     question = question + 1
     if round(float(sum_two)) == round(test_sumtwo):
