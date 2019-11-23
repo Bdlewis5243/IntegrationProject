@@ -56,6 +56,13 @@ elif beginning.lower() == division.lower():
 # kept as a decimal and is rounded to the nearest integer to keep answers
 # and simple and concise.
 
+# When it comes the the array While loop, A teacher instructor named Vlad
+# helped me put the final touches on it to get it working properly. When
+# testing for valid inputs within the areas (addition, subtraction,
+# etc.) Professor Vanselow guided me to use the "try else" route to ensure
+# the loop accounts for both positive and negate values while also making
+# sure the input was a number and not a letter or special character.
+
 if add_start == 1:
     import random
 
