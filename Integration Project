@@ -2,6 +2,13 @@
 ___author___ = Bailey
 """
 
+# The blow code sets the array equal to selection_upper. When the input is
+# put into the loop, it test whether it is equal to one of the four in the
+# array. When the input is invalid then the while loop continues. When a
+# valid input is detected a point is added to the specific path and that
+# activates the desired area (like addition) to begin. Only one path/area
+# can be selected at a time.
+
 print("Welcome to the basic math quiz game.")
 add_start = 0
 sub_start = 0
@@ -35,6 +42,19 @@ elif beginning.lower() == multiplication.lower():
     mul_start = mul_start + 1
 elif beginning.lower() == division.lower():
     div_start = div_start + 1
+
+# The blow code creates two random numbers then adds them to create an
+# answer, then a third random value is created to get a second answer. The
+# code asks what is the addition of the first two random number. If the user
+# input is equal to answer a point is added, then it repeated for known
+# answer 2. If the user input is equal to known answer 2 then another point
+# is added and it displays score out of total questions would we be
+# "# out of 2"
+
+# It is the same for subtraction and multiplication but replaced with the
+# proper signs. For division the same process is similar but the answer is
+# kept as a decimal and is rounded to the nearest integer to keep answers
+# and simple and concise.
 
 if add_start == 1:
     import random
