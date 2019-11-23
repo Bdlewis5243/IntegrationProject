@@ -1,3 +1,7 @@
+"""
+___author___ = Bailey
+"""
+
 print("Welcome to the basic math quiz game.")
 add_start = 0
 sub_start = 0
